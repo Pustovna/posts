@@ -1,0 +1,101 @@
+*
+    box-sizing: border-box
+    font-family: 'Fira Sans', sans-serif
+
+.container
+    display: flex
+    align-items: center
+    flex-direction: column
+    
+.item
+    width: 180px
+    height: 100px
+    border-radius: 1em
+    margin: 0 auto
+    text-align: center
+    margin-bottom: 5em
+    display: block
+
+.dot
+    width:  20px
+    height: 20px
+    background-color: grey
+    display: inline-block
+    margin-top: 40px
+    border-radius: 50%  
+  
+
+
+#dot1
+    animation: pulsate 2s ease-out
+    animation-iteration-count: infinite
+
+@keyframes pulsate
+    0%
+      transform: scale(0.1)
+      opacity: 0
+
+    50%
+      opacity: 1
+
+    100%
+      transform: scale(1.2)
+      opacity: 0
+
+#dot2
+    animation: pulsate 2s ease-out
+    animation-iteration-count: infinite
+    animation-delay: 0.2s
+#dot3
+    animation: pulsate 2s ease-out
+    animation-iteration-count: infinite
+    animation-delay: 0.4s
+#dot4
+    animation: pulsate 2s ease-out
+    animation-iteration-count: infinite
+    animation-delay: 0.6s
+#dot5
+    animation: pulsate 2s ease-out
+    animation-iteration-count: infinite
+    animation-delay: 0.8s
+
+
+
+.wrap
+    display: flex
+    flex-wrap: wrap
+    max-width: 1040px
+    margin-top: 20px
+    & p
+        box-shadow: 0 0 10px -3px #010102e8
+        padding: 20px
+        border-radius: 10px
+        width: 100%
+        margin: 10px
+        color: #565050
+        @media (max-width: 1040px)
+            width: 100%
+            max-width: 1000px
+    & span
+        display: block
+        font-size: 0.8em
+        color: grey
+        margin-bottom: 10px
+
+
+    
+.getButton
+    display: none
+    margin: 30px 0
+    border: 3px solid #5181b8
+    padding: 10px
+    text-transform: uppercase
+    background-color: transparent
+    font-weight: 600
+    border-radius: 10px
+    cursor: pointer
+    transition: all 400ms
+    &:hover
+        background-color: #4778b185
+    &:active
+         background-color: #5181b8
